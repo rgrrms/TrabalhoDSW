@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro Produto</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>CADASTRO DE PRODUTOS</h1>
+        </div>
+        <div class="container">
+            <form class="cadastro" method="post" enctype="multipart/form-data">
+                <div class="itens">
+                    <label for="nome">Produto: </label>
+                    <input class="campos" type="text" id="nome" maxlength="20" required>
+                </div>
+                <div class="itens">
+                    <label for="preco">Preço: </label>
+                    <input class="campos" type="number" id="preco" step="0.01" required>
+                </div>
+                <div class="itens">
+                    <label for="qtde">Quantidade: </label>
+                    <input class="campos" type="number" id="qtde" required>
+                    <select class="campos" type="text" id="un" required>
+                        <option value="">Tipo</option>
+                        <option value="a">UN</option>
+                        <option value="b">KG</option>
+                        <option value="c">LT</option>
+                    </select>
+                </div>
+                <div class="itens">
+                    <label for="validade">Data de validade: </label>
+                    <input class="campos" type="date" id="validade" required>
+                </div>
+                <div class="itens">
+                    <label for="categoria">Categoria: </label>
+                    <select class="campos" name="selecione" id="categoria" required>
+                        <option value="">Selecione...</option>
+                        <option value="1">Bebidas</option>
+                        <option value="2">Açougue</option>
+                        <option value="3">Hortifruti</option>
+                        <option value="4">Padaria</option>
+                        <option value="5">Frios</option>
+                        <option value="6">Alimentos Congelados</option>
+                        <option value="7">Higiene Pessoal</option>
+                        <option value="8">Produtos de Limpeza</option>
+                        <option value="9">Mercearia</option>
+                        <option value="10">Chocolateria</option>
+                    </select>
+                </div>
+                <div class="itens">
+                    <label for="foto">Foto</label>
+                    <input class="campos" type="file" id="foto" accept="image/png, image/jpeg" required>
+                </div>
+                <div class="buttons">
+                    <button id="limpar">Limpar</button>
+                    <button id="cadastrar">Cadastrar</button>
+                </div>
+                <p class="obrigatorio"></p>
+                <p class="positivo"></p>
+                <p class="semana"></p>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

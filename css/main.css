@@ -1,0 +1,90 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #505050;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 30px;
+    background-color: 	#ffffff;
+    color: #505050;
+    border-radius: 15px;
+    width: 900px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    border: solid 2px 	#ffffff;
+    width: 800px;
+    height: 600px;
+    box-shadow: 10px 10px 5px 	#ffffff;
+    font-weight: bold;
+}
+
+.itens {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+label, input, select, button {
+    font-size: 25px;
+}
+
+button {
+    background-color: green;
+    border-radius: 10px;
+    width: 150px;
+}
+
+button:hover {
+    box-shadow: grey;
+}
+
+.campos {
+    border: 2px solid 	#ffffff;
+    border-radius: 10px;
+}
+
+#nome {
+    width: 348px;
+
+}
+
+#preco {
+    width: 370px;
+}
+
+#limpar {
+    background-color: #ffff00;
+}
+
+p {
+    color: red;
+    font-size: 42px;
+    font-weight: bold;
+}
