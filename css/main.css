@@ -55,14 +55,22 @@ label, input, select, button {
     font-size: 25px;
 }
 
+select, button {
+    cursor:pointer;
+}
+
 button {
     background-color: green;
     border-radius: 10px;
     width: 150px;
 }
 
-button:hover {
-    box-shadow: grey;
+#cadastrar:hover {
+    background-color: #00ff00;
+}
+
+#limpar:hover {
+    background-color: #ffff66;
 }
 
 .campos {
